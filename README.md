@@ -5,8 +5,11 @@ This project is a web-based quiz application that fetches quiz data from an exte
 
 # Setup Instructions
 **Prerequisites**
-    Node.js
-    npm
+
+  Node.js
+
+  npm
+
 1. Clone the repository:
    
        git clone https://github.com/Kushkusum/Quiz-React.git
@@ -79,10 +82,10 @@ Responsive and clean user interface
 
    A breakdown of each question, showing the correct answer, user’s answer, and whether they were correct or incorrect.
 
-6. Hints (Bonus Feature)
+6. Replay
    
-   The app includes a hint button that allows users to view the correct answer briefly if they're stuck. A small deduction in time is applied when the hint is used.
-
+   Users can replay the quiz with a single click using the Replay button, resetting the score and questions.
+   
 7. Sound Effects
    
    The app uses sound effects to provide feedback to the user:
@@ -92,6 +95,12 @@ Responsive and clean user interface
     Incorrect Answer: Plays a negative sound when the user selects the wrong option.
 
     Completion Sound: Plays a celebration sound when the quiz is completed.
+   
+8. Progress Bar
+
+    A visual progress bar updates as the user moves through the quiz, giving a clear indication of quiz completion.
+
+   
 
 ## Dependencies
 React: JavaScript library for building user interfaces
