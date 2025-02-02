@@ -1,0 +1,280 @@
+/* Main Result Page */
+.result-page {
+  background-color: #4a154b;
+  color: #ffffff;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.progress-bar-container {
+  background-color: #2c0f2d;
+  border-radius: 20px;
+  height: 20px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 15px;
+}
+
+.progress-bar {
+  background-color: #00c49a;
+  height: 100%;
+  border-radius: 20px;
+  position: relative;
+  transition: width 0.5s ease;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: 10px;
+  top: -30px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.result-message {
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.replay-btn {
+  background-color: #db1212;
+  color: #ffffff;
+}
+
+.review-btn {
+  background-color: #db1212;
+  color: #ffffff;
+}
+
+.result-overview {
+  background-color: #2c0f2d;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 15px;
+  background-color: #8e44ad;
+  color: #ffffff;
+  margin: 0 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.active-tab {
+  background-color: #00c49a;
+}
+
+.question-summary {
+  margin-top: 20px;
+}
+
+.summary-item {
+  background-color: #4a154b;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.correct {
+  border-left: 5px solid #00c49a;
+}
+
+.incorrect {
+  border-left: 5px solid #e74c3c;
+}
+
+.correct-tag {
+  color: #00c49a;
+  font-weight: bold;
+}
+
+.incorrect-tag {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.leaderboard {
+  background-color: #4a154b;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.leaderboard ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #4a154b;
+}
+.answer-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.answer-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.correct {
+  border-left: 5px solid #00c49a;
+}
+
+.incorrect {
+  border-left: 5px solid #e74c3c;
+}
+.badge-image {
+  width: 500px; /* Adjust size based on your needs */
+  height: auto;
+  margin-top: 10px;
+}
+.result-page {
+  text-align: center;
+  padding: 2rem;
+}
+
+.result-header h2 {
+  font-size: 2.5rem;
+  color: #e6e1e1;
+}
+
+.score-container {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.progress-bar-container {
+  background-color: #ddd;
+  border-radius: 10px;
+  height: 10px;
+  margin: 2rem 0;
+  position:relative;
+}
+
+.progress-bar {
+  background-color: #4caf50;
+  height: 100%;
+  text-align: center;
+  color: white;
+  line-height: 20px;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+}
+
+.rank-container {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.result-message {
+  font-size: 1rem;
+  color: #777;
+}
+
+.badge-container {
+  margin-top: 1rem;
+}
+
+.badge-image {
+  width: 100px;
+  height: 100px;
+  margin-top: 1rem;
+}
+
+.result-overview {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.answer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.summary-item {
+  padding: 1rem;
+  margin: 1rem 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.correct {
+  background-color: #d4edda;
+}
+
+.incorrect {
+  background-color: #f8d7da;
+}
+
+.correct-tag {
+  color: #28a745;
+}
+
+.incorrect-tag {
+  color: #dc3545;
+}
+
+.result-actions {
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 0 1rem;
+}
+
+.replay-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.review-btn {
+  background-color: #007bff;
+  color: white;
+}

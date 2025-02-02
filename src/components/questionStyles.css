@@ -1,0 +1,38 @@
+.question-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .question-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .options-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .option-item {
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .option-item:hover {
+    background-color: #4e73df;
+    color: white;
+    transform: scale(1.05);
+  }
+  
+  .option-item.selected {
+    background-color: #4e73df;
+    color: white;
+  }
+  

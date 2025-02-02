@@ -1,0 +1,235 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(96, 7, 96);
+  background-size: 100% 100%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* Timer Styles */
+.timer {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f81900; /* Red color for urgency */
+  text-align: right;
+  margin-top: 10px;
+  background-color: rgba(218, 211, 211, 0.982); /* Light red background */
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.quiz-container {
+  max-width: 30000px;
+  margin: 20px auto;
+  padding: 40px;
+  background-color:#4a154b;;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out forwards;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiz-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f2edf2;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.question-container {
+  padding: 25px;
+  background-color: #a08ca9;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.options-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.options-list li {
+  background-color: #eaf5f6;
+  color: rgb(96, 43, 22);
+
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.options-list li:hover {
+  background-color: #8b9198;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.options-list li:active {
+  transform: scale(0.98);
+}
+
+.result-container,
+.rank,
+.leaderboard {
+  margin-top: 30px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.result-container ul,
+.leaderboard ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.result-container li,
+.leaderboard li {
+  padding: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Badge Animations */
+.badges ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.badges li {
+  margin: 10px;
+  text-align: center;
+}
+
+.badges img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.badges img:hover {
+  transform: scale(1.1);
+}
+
+.answers-list {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.answers-list li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+/* For mobile (small screens) */
+@media screen and (max-width: 600px) {
+  .quiz-title {
+    font-size: 2rem;
+  }
+
+  .question-container {
+    padding: 15px;
+  }
+
+  .options-list li {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .quiz-container {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+/* For tablets (medium screens) */
+@media screen and (max-width: 1024px) {
+  .quiz-title {
+    font-size: 2.3rem;
+  }
+
+  .options-list li {
+    font-size: 1.2rem;
+  }
+
+  .quiz-container {
+    margin: 20px auto;
+    padding: 25px;
+  }
+}
+
+/* For larger screens */
+@media screen and (min-width: 1025px) {
+  .quiz-container {
+    width: 70%;
+  }
+
+  .quiz-title {
+    font-size: 2.5rem;
+  }
+
+  .options-list li {
+    font-size: 1.4rem;
+  }
+
+  .question-container {
+    padding: 20px;
+  }
+
+  .result-container,
+  .rank,
+  .leaderboard {
+    font-size: 1.2rem;
+  }
+}
